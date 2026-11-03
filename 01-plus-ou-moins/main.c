@@ -18,17 +18,19 @@ int main() {
     int secret = tirer_nombre(min, max);
     int proposition
     int essais = 0; 
+    int resultat;
        
     do {
         printf("Ton essai : ");
         scanf("%d", &proposition);
         essais++;
-    
         
-        if (comparer == -1) {
+        resultat = comparer(proposition, secret);
+        
+        if (resultat == -1) {
             printf("Plus grand !");
         } 
-        else if (comparer == 1) {
+        else if (resultat == 1) {
             printf("Plus petit !");
         }
     } 
