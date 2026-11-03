@@ -18,7 +18,22 @@ int main() {
     int secret = tirer_nombre(min, max);
     int proposition
     int essais = 0; 
-    int resultat;
+       
+    do {
+        printf("Ton essai : ");
+        scanf("%d", &proposition);
+        essais++;
     
+        
+        if (comparer == -1) {
+            printf("Plus grand !");
+        } 
+        else if (comparer == 1) {
+            printf("Plus petit !");
+        }
+    } 
+    while (resultat != 0);
+
+
     return 0;
 }
