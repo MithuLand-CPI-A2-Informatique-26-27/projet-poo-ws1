@@ -53,6 +53,7 @@ int main(){
 }
 */
 
+/*
 #include <iostream>
 #include <cmath>
 
@@ -126,4 +127,140 @@ int main() {
     std::cout << "Coordinates of the top left corner: (" << r.x << ", " << r.y << ")" << std::endl;
     std::cout << r.area() << std::endl;
     return 0;
+}
+*/
+
+/*
+#include <iostream>
+
+using namespace std;
+
+
+
+
+class Fraction {
+private:
+    double denum;
+    double num;
+public:
+Fraction(){
+    num = 1;
+    denum = 1;
+}
+Fraction(double n, double d){
+  setNum(n);
+  setDenum(d);
+}
+
+void setNum(double n){
+    num = n;
+}
+
+void setDenum(double d){
+    if(d!=0){
+    denum = d;
+    printf("Pas de 0 !");
+    }
+
+void addition(Fraction f){
+    num 
+}
+
+}
+
+    double getNum(){
+        return num;
+    }
+    double getDenum(){
+        return denum;
+    }
+
+    void afficher(){
+        std::cout << num << "/" << denum << std::endl;
+    }
+};
+
+int main()
+{
+    Fraction f;
+    f.afficher();
+    Fraction f2(1,0);
+    f2.afficher();
+    Fraction f3(15,13);
+    f3.afficher();
+}
+*/
+
+#include <iostream>
+#include <string>
+
+class Creature
+{
+private:
+int pv;
+int pa ;
+int niveau;
+
+public:
+void afficher(){
+    printf("")
+}
+
+void attaque(){
+ retun pa;
+}
+
+void subitDegat(int degat){
+    pv = pv - degat;
+
+}
+
+void estVivant(){
+    if(pv > 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+}
+
+class Heros{
+private:
+string nom;
+int pa ;
+int pv;
+
+public:
+Affiche(){
+    printf("");
+}
+
+void subitDegat(int degat){
+    pv = pv - degat;
+
+}
+
+void subitDegat(int degat){
+    pv = pv - degat;
+
+}
+
+void estVivant(){
+    if(pv > 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+}
+
+int main()
+{
+Heros(10, 10, 8, "Hrun");
+Creature(10, 10, 5);
+
 }
